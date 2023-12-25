@@ -9,14 +9,16 @@ interface IPrams {
 }
 
 const Product = ({ params }: { params: IPrams }) => {
-  console.log(params)
+  const { productId } = params;
+  const product = products.find((item) => item.id === productId);
+
   return (
     <div className="p-8">
       <Container>
-        <ProductDetails product = {products[1]} />
+        <ProductDetails product = {product} />
         <div className="flex flex-col mt-20 gap-4">
           <div>Add Rating</div>
-          <ListRating product={products[1]} />
+          <ListRating product={product} />
         </div>
       </Container>
     </div>
