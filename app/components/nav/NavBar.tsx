@@ -18,6 +18,7 @@ const NavBar = () => {
               <div>UserMenu</div>
             </div>
           </div>
+          
         </Container>
       </div>
     </div>
