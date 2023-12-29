@@ -39,3 +39,6 @@ nextAuthjs, prisma
 
 
 npx prisma db push
+
+signin With google: get GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET in google cloud ([...nextauth].ts)
+  => call signin('google)
