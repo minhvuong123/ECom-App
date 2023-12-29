@@ -76,8 +76,6 @@ export async function POST(request: Request) {
 
       return NextResponse.json({ paymentIntent: updated_intent });
     }
-
-    return NextResponse.json({ });
   } else {
     // create intent
     const paymentIntent = await stripe.paymentIntents.create({
