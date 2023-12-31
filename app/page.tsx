@@ -28,7 +28,7 @@ export default async function Home({ searchParams }: HomeProps) {
   const shuffedProducts = shuffeArray(products)
 
   return (
-    <div>
+    <div className="mt-8">
       <Container>
         <div>
           <HomeBanner />
